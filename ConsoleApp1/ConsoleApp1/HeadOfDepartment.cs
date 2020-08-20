@@ -6,8 +6,18 @@ namespace MaternityDepartment
 {
     class HeadOfDepartment : Employee
     {
-        public override string EmployeeFullName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override int EmployeeId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override double EmployeeSalary { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public HeadOfDepartment(string employeeFullname, int employeeId, double employeeSalary, double startHour, double endHour, double hourlyRate, double extraRate, double riskRate, bool isSenior) :
+             base(employeeFullname, employeeId, employeeSalary, startHour, endHour, hourlyRate, extraRate, riskRate, isSenior)
+        {
+            EmployeeFullName = employeeFullname;
+            EmployeeId = employeeId;
+            EmployeeSalary = employeeSalary;
+            StartHour = startHour;
+            EndHour = endHour;
+            HourlyRate = hourlyRate;
+            ExtraRate = extraRate;
+            RiskRate = riskRate;
+            IsSenior = isSenior;
+        }
     }
 }

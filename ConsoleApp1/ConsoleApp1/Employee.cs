@@ -6,15 +6,15 @@ namespace MaternityDepartment
 {
     public abstract class Employee
     {
-        public abstract string EmployeeFullName { get; set; }
-        public abstract int EmployeeId { get; set; }
-        public abstract double EmployeeSalary { get; set; }
-        public abstract double StartHour { get; set; }
-        public abstract double EndHour { get; set; }
-        public abstract double HourlyRate { get; set; }
-        public abstract double ExtraRate { get; set; }
-        public abstract double RiskRate { get; set; }
-        public abstract bool is
+        public string EmployeeFullName { get; set; }
+        public  int EmployeeId { get; set; }
+        public  double EmployeeSalary { get; set; }
+        public  double StartHour { get; set; }
+        public double EndHour { get; set; }
+        public  double HourlyRate { get; set; }
+        public double ExtraRate { get; set; }
+        public double RiskRate { get; set; }
+        public bool IsSenior { get; set; }
         public enum EmployeeType
         {
             Clearner,
@@ -42,12 +42,19 @@ namespace MaternityDepartment
         
         
 
-        public Employee()//string employeeFullname, int employeeId, int employeePhoneNumber,  double employeeSalary)
+        public Employee (string employeeFullname, int employeeId, double employeeSalary, double startHour, double endHour, double hourlyRate, double extraRate, double riskRate, bool isSenior)
         {
-            //EmployeeFullName = employeeFullName;
-            //EmployeeId = employeeId;
-            //EmployeePhoneNumber = employeePhoneNumber;
-            //EmployeeSalary = employeeSalary;
+            EmployeeFullName = employeeFullname;
+            EmployeeId = employeeId;
+            EmployeeSalary = employeeSalary;
+            StartHour = startHour;
+            EndHour = endHour;
+            HourlyRate = hourlyRate;
+            ExtraRate = extraRate;
+            RiskRate = riskRate;
+            IsSenior = isSenior;
         }
-    }
+
+
+}
 }
