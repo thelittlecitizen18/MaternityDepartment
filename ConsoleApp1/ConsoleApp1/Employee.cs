@@ -8,7 +8,7 @@ namespace MaternityDepartment
     {
         public string EmployeeFullName { get; set; }
         public  int EmployeeId { get; set; }
-        public  double EmployeeSalary { get; set; }
+        private  double EmployeeSalary { get; }
         public  double StartHour { get; set; }
         public double EndHour { get; set; }
         public  double HourlyRate { get; set; }

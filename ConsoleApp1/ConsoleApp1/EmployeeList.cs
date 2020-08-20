@@ -10,10 +10,25 @@ namespace MaternityDepartment
         List<Employee> employees = new List<Employee>();
 
 
-        public void AddToList(Employee Employees)
+        public void AddToList(Employee employee)
         {
-            employees.Add(Employees);
+            employees.Add(employee);
 
+        }
+
+        public void CheckInEmployeeList(Employee employee)
+        {
+            bool employeeInList = employees.Contains(employee);
+            if  (employeeInList == true)
+            {
+
+             
+
+            }
+            else
+            {
+                Console.WriteLine("Employee name:" + employee + "is'nt registered to the system");
+            }
         }
     }
 }
