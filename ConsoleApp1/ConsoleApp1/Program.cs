@@ -9,6 +9,7 @@ namespace MaternityDepartment
         static void Main(string[] args)
         {
             List<Employee> employees = new List<Employee>();
+            PortalFunction portalFunction = new PortalFunction(employees);
 
             while (true)
             {

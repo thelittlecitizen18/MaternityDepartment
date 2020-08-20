@@ -8,38 +8,14 @@ namespace MaternityDepartment
     {
         public string EmployeeFullName { get; set; }
         public  int EmployeeId { get; set; }
-        private  double EmployeeSalary { get; }
+        public  double EmployeeSalary { get;  }
         public  double StartHour { get; set; }
         public double EndHour { get; set; }
         public  double HourlyRate { get; set; }
         public double ExtraRate { get; set; }
         public double RiskRate { get; set; }
         public bool IsSenior { get; set; }
-        public enum EmployeeType
-        {
-            Clearner,
-            ToxicCleaner,
-            MultiCleaners,
-            CleanerShitManager,
-            Cooker,
-            ChefAsistent,
-            Chef,
-            FoodDistributor,
-            ChiefOfStuff,
-            Nersue,
-            Trainee,
-            Medic,
-            Paramedic,
-            HeadOfNurses,
-            Midwife,
-            SpecialMidwife,
-            SpeialTrainee,
-            Doctor,
-            Expert,
-            ViceHeadOfDepartment,
-            HeadOfDepartment,
-        }
-        
+        public string EmployeeType;
         
 
         public Employee (string employeeFullname, int employeeId, double employeeSalary, double startHour, double endHour, double hourlyRate, double extraRate, double riskRate, bool isSenior)
